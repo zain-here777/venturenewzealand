@@ -1,0 +1,273 @@
+.video-js .vjs-big-play-button:before,
+.video-js .vjs-control:before,
+.video-js .vjs-modal-dialog,
+.vjs-modal-dialog .vjs-modal-dialog-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-family: "Ionicons", "Questrial" !important;
+	cursor: pointer;
+}
+
+.video-js .vjs-big-play-button:before,
+.video-js .vjs-control:before {
+	text-align: center;
+}
+
+.vjs-icon-play:before,
+.vjs-icon-play-circle:before,
+.vjs-icon-pause:before,
+.video-js .vjs-play-control:before,
+.video-js .vjs-play-control.vjs-playing:before {
+	content: "\f488";
+}
+
+.vjs-icon-volume-mute:before,
+.video-js .vjs-mute-control.vjs-vol-0:before,
+.video-js .vjs-volume-menu-button.vjs-vol-0:before {
+	content: "\f3b8";
+}
+
+.vjs-icon-volume-low:before,
+.video-js .vjs-mute-control.vjs-vol-1:before,
+.video-js .vjs-volume-menu-button.vjs-vol-1:before {
+	content: "\f258";
+}
+
+.vjs-icon-volume-mid:before,
+.video-js .vjs-mute-control.vjs-vol-2:before,
+.video-js .vjs-volume-menu-button.vjs-vol-2:before {
+	content: "\f259";
+}
+
+.vjs-icon-volume-high:before,
+.video-js .vjs-mute-control:before,
+.video-js .vjs-volume-menu-button:before {
+	content: "\f257";
+}
+
+.vjs-icon-fullscreen-enter:before,
+.video-js .vjs-fullscreen-control:before {
+	content: "\f3d8";
+}
+
+.vjs-icon-fullscreen-exit:before,
+.video-js.vjs-fullscreen .vjs-fullscreen-control:before {
+	content: "\f3d0";
+}
+
+.vjs-icon-square:before,
+.vjs-icon-spinner:before,
+.vjs-icon-subtitles:before,
+.video-js .vjs-subtitles-button:before,
+.vjs-icon-captions:before,
+.video-js .vjs-captions-button:before,
+.vjs-icon-chapters:before,
+.video-js .vjs-chapters-button:before,
+.vjs-icon-share:before,
+.vjs-icon-cog:before,
+.vjs-icon-circle:before,
+.video-js .vjs-mouse-display:before,
+.video-js .vjs-play-progress:before,
+.video-js .vjs-volume-level:before,
+.vjs-icon-circle-outline:before,
+.vjs-icon-circle-inner-circle:before,
+.vjs-icon-hd:before,
+.vjs-icon-cancel:before,
+.video-js .vjs-control.vjs-close-button:before,
+.vjs-icon-replay:before,
+.vjs-icon-facebook:before,
+.vjs-icon-gplus:before,
+.vjs-icon-linkedin:before,
+.vjs-icon-twitter:before,
+.vjs-icon-tumblr:before,
+.vjs-icon-pinterest:before,
+.vjs-icon-audio-description:before,
+.video-js {
+	max-width: 750px;
+	height: 500px;
+	right: 0;
+	vertical-align: top;
+	box-sizing: border-box;
+	color: #fff;
+	background: #000;
+	position: relative;
+	padding: 0;
+	font-size: 10px;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Ionicons", "Questrial" !important;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden;
+}
+
+.place_video{
+    max-width: 750px;
+	height: 500px;
+    right: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.video-js:-moz-full-screen {
+	position: absolute;
+}
+
+.video-js:-webkit-full-screen {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.video-js *,
+.video-js *:before,
+.video-js *:after {
+	box-sizing: inherit;
+}
+
+
+
+.vjs-icon-playlist-play:before,
+.vjs-icon-playlist-plus:before,
+.vjs-icon-playlist-check:before,
+.vjs-icon-playlist-music:before,
+.vjs-icon-playlist-minus:before,
+.vjs-icon-playlist-up:before,
+.vjs-icon-playlist-down:before,
+.vjs-icon-playlist-left:before,
+.vjs-icon-playlist-right:before,
+.vjs-icon-playlist-movie:before {
+	content: "";
+}
+
+
+@media (max-width: 992px){
+.place_wrapper .country_video {
+    width: 680px;
+    height:360px;
+}
+}
+@media (max-width: 767px){
+	.video-js {
+		position: relative;
+		width: 100%;
+		height: 360px;
+	}
+    .place_video {
+		position: relative;
+		width: 100%;
+		height: 360px;
+	}
+    .country_video {
+		position: relative;
+		width: 100%;
+		height: 360px;
+	}
+    .place_wrapper .country_video {
+        position: relative;
+		width: 100%;
+		height: 200px;
+    }
+
+}
+
+@media (max-width: 480px){
+	.video-js {
+		position: relative;
+		width: 100%;
+		height: 300px;
+	}
+    .place_video {
+		position: relative;
+		width: 100%;
+		height: 300px;
+	}
+    .country_video {
+		position: relative;
+		width: 100%;
+		height: 300px;
+	}
+}
+
+@media (min-width: 768px){
+	.video-js {
+		width: 540px;
+		height:360px;
+	}
+    .place_video {
+		width: 540px;
+		height:360px;
+	}
+    .country_video {
+		width: 540px;
+		height:360px;
+	}
+}
+@media (min-width: 992px){
+	.video-js {
+		width: 480px;
+		height:360px;
+	}
+    .place_video {
+		width: 480px;
+		height:360px;
+	}
+    .country_video {
+		width: 480px;
+		height:360px;
+	}
+}
+@media (min-width: 1200px){
+	.place_video {
+		width: 600px;
+		height:400px;
+	}
+    .country_video {
+		width: 600px;
+		height:400px;
+	}
+    .video-js {
+		width: 600px;
+		height:400px;
+	}
+}
+@media (min-width: 1441px){
+	.video-js {
+		width: 680px;
+		height:450px;
+	}
+    .place_video {
+		width: 680px;
+		height:450px;
+	}
+    .country_video {
+		width: 680px;
+		height:450px;
+	}
+}
+@media (min-width: 1660px){
+	.place_video {
+		width: 750px;
+	}
+    .country_video {
+		width: 750px;
+	}
+    .video-js {
+		width: 750px;
+	}
+}
+/*
+Next step:
+
+Customize https://plyr.io
+
+*/
+

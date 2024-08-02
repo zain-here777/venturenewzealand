@@ -1,0 +1,1 @@
+<h1>Product Discount About to Start</h1> <br>Product : {{$product->name}} <br>Discount $: {{$product->discount_percentage}}

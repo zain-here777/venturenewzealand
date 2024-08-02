@@ -1,0 +1,19 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/all.css": "/css/all.css",
+    "/css/pnotifycss.css": "/css/pnotifycss.css",
+    "/css/style_responsive_custom-rtl.css": "/css/style_responsive_custom-rtl.css",
+    "/css/style_responsive_custom.css": "/css/style_responsive_custom.css",
+    "/css/sweetalert_toastr.css": "/css/sweetalert_toastr.css",
+    "/js/all.js": "/js/all.js",
+    "/js/libsjs.js": "/js/libsjs.js",
+    "/js/fil_custom.js": "/js/fil_custom.js",
+    "/js/admin_vendor.js": "/js/admin_vendor.js",
+    "/js/colorpicker.js": "/js/colorpicker.js",
+    "/js/pnotify_lazyload.js": "/js/pnotify_lazyload.js",
+    "/js/page_template_weather_check.js": "/js/page_template_weather_check.js",
+    "/js/page_template_weather.js": "/js/page_template_weather.js",
+    "/css/admin-all.css": "/css/admin-all.css",
+    "/js/admin-all.js": "/js/admin-all.js"
+}

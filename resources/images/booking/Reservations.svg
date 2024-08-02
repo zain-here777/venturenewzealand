@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Reservations_Dark_50x50" data-name="Reservations Dark 50x50" transform="translate(-3058 -1014)">
+    <rect id="Frame" width="40" height="40" transform="translate(3058 1014)" fill="none"/>
+    <path id="Reservation" d="M6,2V42H39.043V25.305l3.565-3.567.262-.26s0,0,0,0l.347-.345a3.556,3.556,0,0,0-4.175-5.662V2Zm6.087,10.435h3.478v1.739H12.087Zm6.087,0H32.957v1.739H18.174Zm-6.087,5.217h3.478v1.739H12.087Zm6.087,0H32.957v1.739H18.174Zm20.608.262,2.609,2.609L29.312,32.6,26.7,29.993ZM12.087,22.87h3.478v1.739H12.087Zm6.087,0H31.391l-1.737,1.739H18.174Zm-6.087,5.217h3.478v1.739H12.087Zm6.087,0h8l-1.739,1.739H18.174Zm7.3,3.14,2.6,2.6-3.555.954Z" transform="translate(3052.869 1012)" fill="#72bf44"/>
+  </g>
+</svg>

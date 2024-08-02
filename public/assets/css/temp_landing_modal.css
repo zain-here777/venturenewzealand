@@ -1,0 +1,402 @@
+.popup.popup-form {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 0;
+}
+
+.dialog-wrapper {
+    background-color: #fefefe;
+    box-shadow: -2px 0 4px 0 rgb(0 0 0 / 20%);
+    transition: all 0.3s;
+    margin: auto !important;
+    transition: all 0.3s;
+    text-align: left;
+    padding: 60px 30px 30px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 15px;
+    border: 2px solid #72bf44;
+    z-index: 20;
+}
+
+.popup-form .popup__close {
+    top: 30px;
+    right: 30px;
+}
+
+.popup-form .popup-logo {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.popup-form .popup-logo img {
+    max-width: 96px;
+}
+
+.popup-form .choose-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.popup-form .choose-form li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.popup-form .choose-form li a {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto";
+    line-height: normal;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    line-height: 19px;
+    display: block;
+    padding-bottom: 10px;
+    color: #8d8d8d;
+}
+
+.popup-form .choose-form li.active a {
+    color: #2d2d2d;
+    border-bottom-color: #2d2d2d;
+}
+
+.popup-form .choose-form li a:hover {
+    color: #2d2d2d;
+    border-bottom-color: #2d2d2d;
+    text-decoration: none;
+}
+
+.popup-form .choose-form li:last-child {
+    margin-right: 0;
+}
+
+.popup-form .choose-form li.active a {
+    color: #2d2d2d;
+    border-bottom-color: #2d2d2d;
+}
+
+.popup-form .choose-more {
+    line-height: normal;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.popup-form .choose-more .fb {
+    color: #4267b2;
+}
+
+.popup-form .choose-more .gg {
+    color: #ea4335;
+}
+
+.popup-form .choose-or {
+    position: relative;
+    line-height: normal;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popup-form .choose-or span {
+    position: relative;
+    z-index: 1;
+    background-color: #fefefe;
+    padding: 0 8px 0 8px;
+    vertical-align: -1px;
+}
+
+.popup-form .choose-or:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #eeeeee;
+}
+
+.popup-form .field-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.popup-form .field-inline .field-input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.popup-form input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: #000 !important;
+}
+
+.popup-form input[type="submit"] {
+    border-radius: 20px;
+    background-color: #72bf44;
+    color: #fefefe;
+    margin-bottom: 0;
+    cursor: pointer;
+    border: 0;
+}
+
+.popup-form input[type="checkbox"] {
+    width: auto;
+    line-height: normal;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-form .forgot_pass {
+    color: #72bf44;
+    display: block;
+    margin-bottom: 20px;
+    line-height: normal;
+}
+
+.form-sign .field-check label {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 10px;
+}
+
+.popup-form.open {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+.field-check {
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.field-check label {
+    position: relative;
+    display: inline-block;
+    line-height: normal;
+    padding-left: 26px;
+}
+
+.field-check label a {
+    color: #72bf44;
+}
+
+.field-check label:before {
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    border: solid 1px #dddddd;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.field-check label span {
+    position: absolute;
+    border-radius: 3px;
+    text-align: center;
+    height: 16px;
+    width: 16px;
+    top: 3px;
+    background-color: #2d2d2d;
+    left: 0;
+    line-height: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.field-check label input:checked ~ span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-logo {
+    position: absolute;
+    top: 16px;
+    width: 218px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.popup .popup__close {
+    top: 30px;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 32px;
+    right: 25px;
+    cursor: pointer;
+    line-height: 0;
+    z-index: 9;
+    font-size: 20px;
+}
+
+.popup-form input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: #000 !important;
+}
+
+.popup-form input[type="submit"] {
+    border-radius: 20px;
+    background-color: #72bf44;
+    color: #fefefe;
+    margin-bottom: 0;
+    cursor: pointer;
+    border: 0;
+}
+
+.popup-form input[type="checkbox"] {
+    width: auto;
+    line-height: normal;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form_field {
+    display: inline-block;
+    width: 100%;
+}
+
+.form_field .field-input {
+    width: 48%;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    float: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup-form .btn {
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #72bf44;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    padding: 0 25px;
+    color: #ffffff;
+    outline: 0;
+    outline-offset: 0;
+    text-align: center;
+}
+
+.social_signin {
+    margin-top: 30px;
+}
+
+.social_signin .google_signin {
+    margin-top: 5px;
+    border: 1px solid rgb(193, 199, 208);
+    border-radius: 3px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social_signin .google_signin:hover {
+    background-color: rgb(193, 199, 208, 0.7);
+    text-decoration: none;
+    color: #72bf44;
+}
+
+a {
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    color: #2d2d2d;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.field-check label {
+    cursor: pointer;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+
+    position: relative;
+    display: inline-block;
+    line-height: normal;
+}
+
+.field-check label:before {
+    content: "";
+    height: 16px;
+    width: 16px;
+    border: solid 2px #8d8d8d;
+    display: block;
+    left: 0;
+    top: 2px;
+
+    position: static;
+    display: inline-block;
+    vertical-align: -3px;
+    margin-right: 8px;
+}
+
+.field-check label span {
+    position: absolute;
+    border-radius: 3px;
+    text-align: center;
+    height: 16px;
+    width: 16px;
+    background-color: #2d2d2d;
+    line-height: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    top: 13px;
+    left: 15px;
+}

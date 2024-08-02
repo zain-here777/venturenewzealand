@@ -1,0 +1,4 @@
+# Create .env symbolic link to the location
+# Example: ln -s ../.env /var/www/html/docker/.env
+# Preserving the symbolic link inside git
+# !*

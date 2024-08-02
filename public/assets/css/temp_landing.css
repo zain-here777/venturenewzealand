@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'Euphoria Script';
+    src: url('/public/assets/fonts/EuphoriaScript-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    top: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #AAAAAA;
+    background-image: url(../images/Wanaka.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.menu_item {
+    display: flex;
+}
+
+.menu .play_description {
+    background: #3CADF1 0% 0% no-repeat padding-box;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.menu .see_description {
+    background: #3BB44A 0% 0% no-repeat padding-box;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.menu .stay_description {
+    background: #922590 0% 0% no-repeat padding-box;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.menu .eat_description {
+    background: #E91C23 0% 0% no-repeat padding-box;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.menu .rent_description {
+    background: #F9B03F 0% 0% no-repeat padding-box;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.menu .travel_description {
+    background: #ED5929 0% 0% no-repeat padding-box;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.menu .menu_content {
+    width: 200px;
+    height: 93px;
+    margin-bottom: 10px;
+    color: #ffff;
+    padding: 20px;
+    transition: width 1s, height 0.5s;
+    overflow: hidden;
+}
+
+.menu_content h3 {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 35px;
+}
+
+.menu_content p {
+    display: none;
+    font-size: 13px;
+}
+
+.menu_item:hover .menu_img img {
+    width: 250px;
+    height: 150px;
+}
+
+.menu_item:hover .menu_content {
+    width: 320px;
+    height: 150px;
+    padding: 20px;
+}
+
+.menu_item:hover p{
+    display: block;
+}
+
+.menu_item:hover h3 {
+    display: block;
+}
+
+.menu_item_title span svg {
+    width: 53px;
+    height: 53px;
+    fill: transparent
+}
+
+.menu_item_title path {
+    fill: #FEFEFE;
+}
+
+.menu_img img {
+    width: 200px;
+    height: 93px;
+    transition: width 1s, height 0.5s;
+    object-fit: cover;
+}
+
+@media (max-width: 1050px) {
+    .menu_img img {
+        display: none;
+    }
+}
+
+@media (max-width: 910px) {
+    .menu_item_title h3 {
+        display: none;
+    }
+    .menu .menu_content {
+        width: 93px;
+    }
+}
+
+@media (max-width: 570px) {
+    .menu .menu_content {
+        width: 59px;
+        height: 59px;
+        padding: 10px;
+    }
+    .menu_item_title span svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.header {
+    margin: 30px 0;
+}
+
+.header img {
+    max-width: 295px;
+}
+
+.right_header .sign_in {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    z-index: 10;
+}
+
+.sign_in {
+    color: #ffffff;
+}
+
+.sign_in:hover {
+    text-decoration: none;
+    color: #72bf44;
+}
+
+
+.description {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FEFEFE;
+    margin-bottom: 40px;
+}
+
+.description .coming {
+    max-width: 552px;
+    font-size: 50px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FEFEFE;
+    margin-bottom: 5px;
+    font-family: 'Euphoria Script', cursive;
+}
+
+.description .ready {
+    max-width: 737px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FEFEFE;
+}
+
+@media (max-width: 910px) {
+    .description .coming {
+        width: 442px;
+        font-size: 40px;
+    }
+
+    .description .ready {
+        width: 473px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 570px) {
+    .description .coming {
+        width: 354px;
+        font-size: 32px;
+    }
+    .description .ready {
+        width: 400px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 420px) {
+    .description .coming {
+        width: 266px;
+    }
+    .description .ready {
+        width: 222px;
+    }
+}
+/* 
+@media (max-width: 400px) {
+    .description .coming {
+        width: 276px;
+        font-size: 25px;
+    }
+    .description .ready {
+        width: 400px;
+        font-size: 11px;
+    }
+} */
+
+.singup-form {
+    max-width: 460px;
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.singup-form .user_name {
+    margin-bottom: 5px;
+}
+
+.singup-form .user_name .input_user_name {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #72bf44;
+    background: #FEFEFE 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 10px 14px;
+}
+
+.singup-form .email_address .input_email_address {
+    width: 300px;
+    height: 38px;
+    border: 1px solid #72bf44;
+    background: #FEFEFE 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin-right: 20px;
+}
+
+@media (max-width: 910px) {
+    .singup-form {
+        max-width: 360px;
+    }
+
+    .singup-form .email_address .input_email_address {
+        width: 200px;
+    }
+}
+
+@media (max-width: 420px) {
+    .singup-form {
+        max-width: 280px;
+    }
+
+    .singup-form .email_address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .singup-form .email_address .input_email_address {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .singup-form .email_address button.user-signup {
+        width:175px;
+    }
+}
+
+.operator_desc {
+    margin-bottom: 40px;
+}
+
+.operator_desc .question {
+    max-width: 285px;
+    text-align: left;
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #FEFEFE;
+    font-family: 'Euphoria Script', cursive;
+}
+
+.operator_desc .answer {
+    max-width: 516px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FEFEFE;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 910px) {
+    .operator_desc .answer {
+        font-size: 13px;
+        max-width: 419px;
+    }
+}
+
+@media (max-width: 570px) {
+    .operator_desc .question {
+        max-width: 203px;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .operator_desc .answer {
+        font-size: 11px;
+        max-width: 419px;
+    }
+}
+
+.btn {
+    background: #72BF44 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    text-align: left;
+    font: normal normal normal 15px/19px Roboto;
+    letter-spacing: 0px;
+    color: #FEFEFE;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #FEFEFE;
+    background-color: #76dd1d;
+}
+
+.operator_desc .operator-button button.operator-signup {
+    max-width: 187px;
+    height: 40px;
+}
+
+.operator_desc .operator-button a.find-out-more {
+    max-width: 187px;
+    height: 40px;
+}
+
+.copyright {
+    width: 316px;
+    height: 17px;
+    text-align: left;
+    font: normal normal normal 14px/17px Roboto;
+    letter-spacing: 0px;
+    color: #FEFEFE;
+}
+
+@media (max-width: 570px) {
+    .copyright {
+        font-size: 11px
+    }
+}
+
+input {
+    outline: none;
+}
